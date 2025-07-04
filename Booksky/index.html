@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Booksky</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Booksky</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>The Hound of the Baskervilles</h2>
+            <h5>Arthur Conan Doyle</h5>
+            <p class="summary">The Hound of the Baskervilles is the third of the four crime novels by British writer Arthur Conan Doyle featuring the detective Sherlock Holmes. Originally serialised in The Strand Magazine from August 1901 to April 1902, it is set largely in Dartmoor, Devon, in England's West Country and follows Holmes and Watson investigating the legend of a fearsome, diabolical hound of supernatural origin. This was the first appearance of Holmes since his apparent death in "The Final Problem", and the success of The Hound of the Baskervilles led to the character's eventual revival.</p>
+            <button class="delete" onclick="deletebook(event)">Delete</button>        
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" id="book-title-input" placeholder="Enter the title of the book">
+            <input type="text" id="book-author-input" placeholder="Author of the book">
+            <textarea id="book-description-input" placeholder="Short Description"></textarea>
+            <button id="add-book">Add</button>
+            <button id="cancel-popup">Cancel</button>
+        </form>
+    </div>
+    
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
